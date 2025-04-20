@@ -11,9 +11,9 @@
                 let h = today.getHours();
                 let m = today.getMinutes();
 
+                h = checkTime(h);
                 m = checkTime(m);
-                s = checkTime(s);
-                document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+                document.getElementById('txt').innerHTML =  h + ":" + m;
                 setTimeout(startTime, 1000); 
             }
 
